@@ -11,22 +11,33 @@
     <title>Mem Slider</title>
   </head>
   <body>
-    <div class="slider middle">
-      <div class="slides">
-        <input type="radio" name="r" id="r1" checked />
-        <input type="radio" name="r" id="r2" />
-        <input type="radio" name="r" id="r3" />
-        <input type="radio" name="r" id="r4" />
-        <div class="slide s1"><img src="./assets/pic1.jpg" alt="pic1" /></div>
-        <div class="slide"><img src="./assets/pic2.jpg" alt="pic2" /></div>
-        <div class="slide"><img src="./assets/pic3.jpg" alt="pic3" /></div>
-        <div class="slide"><img src="./assets/pic4.jpg" alt="pic4" /></div>
+    <div class="wrapper">
+      <div class="slider__main">
+        <div class="slider middle">
+          <div class="slides">
+            <input type="radio" name="r" id="r1" checked />
+            <input type="radio" name="r" id="r2" />
+            <input type="radio" name="r" id="r3" />
+            <input type="radio" name="r" id="r4" />
+            <div class="slide s1">
+              <img src="./assets/pic1.jpg" alt="pic1" />
+            </div>
+            <div class="slide"><img src="./assets/pic2.jpg" alt="pic2" /></div>
+            <div class="slide"><img src="./assets/pic3.jpg" alt="pic3" /></div>
+            <div class="slide"><img src="./assets/pic4.jpg" alt="pic4" /></div>
+          </div>
+        </div>
       </div>
-      <div class="navigation">
-        <label for="r1" class="bar"></label>
-        <label for="r2" class="bar"></label>
-        <label for="r3" class="bar"></label>
-        <label for="r4" class="bar"></label>
+      <div class="additional">
+        <div class="slider__text"></div>
+        <div class="slider__controls">
+          <div class="navigation">
+            <label for="r1" class="bar"></label>
+            <label for="r2" class="bar"></label>
+            <label for="r3" class="bar"></label>
+            <label for="r4" class="bar"></label>
+          </div>
+        </div>
       </div>
     </div>
   </body>
