@@ -94,19 +94,19 @@ input[name="r"] {
   height: 100%;
 }
 
-#r1:checked ~ .slider__main .slider .slides .s1 {
+#r1:checked ~ .s1 {
   margin-left: 0;
 }
 
-#r2:checked ~ .slider__main .slider .slides .s1 {
+#r2:checked ~ .s1 {
   margin-left: -25%;
 }
 
-#r3:checked ~ .slider__main .slider .slides .s1 {
+#r3:checked ~ .s1 {
   margin-left: -50%;
 }
 
-#r4:checked ~ .slider__main .slider .slides .s1 {
+#r4:checked ~ .s1 {
   margin-left: -75%;
 }
 
