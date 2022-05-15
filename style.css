@@ -35,9 +35,7 @@ body {
   position: relative;
   height: 24px;
   width: 24px;
-  /*background-color: #68af9b;*/
   border-radius: 50%;
-  /*margin: 6px;*/
   cursor: pointer;
   opacity: 0.5;
   transition: all 0.4s ease;
@@ -94,19 +92,19 @@ input[name="r"] {
   height: 100%;
 }
 
-#r1:checked ~ .slider__main .slider .slides .s1 {
+#r1:checked .s1 {
   margin-left: 0;
 }
 
-#r2:checked ~ .slider__main .slider .slides .s1 {
+#r2:checked ~ .s1 {
   margin-left: -25%;
 }
 
-#r3:checked ~ .slider__main .slider .slides .s1 {
+#r3:checked ~ .s1 {
   margin-left: -50%;
 }
 
-#r4:checked ~ .slider__main .slider .slides .s1 {
+#r4:checked ~ .s1 {
   margin-left: -75%;
 }
 
