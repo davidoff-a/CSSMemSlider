@@ -21,7 +21,7 @@ body {
   grid-column-start: 1;
   grid-column-end: 4;
   grid-row-start: 1;
-  grid-row-end: 3;
+  grid-row-end: 2;
   overflow: hidden;
   border: 10px solid #fff;
 }
@@ -34,13 +34,13 @@ body {
 .slider__controls {
   width: 160px;
   height: 24px;
-  position: absolute;
-  bottom: 16px;
-  left: 50%;
+  padding-right: 10px;
   display: flex;
   justify-content: space-between;
-  transform: translateX(-50%);
+  justify-self: flex-end;
+  align-self: center;
 }
+
 .bar {
   position: relative;
   height: 24px;
@@ -87,13 +87,20 @@ input[name="r"] {
   visibility: hidden;
 }
 
-.slides {
+.slides,
+.slides__text {
   width: 400%;
   height: 100%;
   display: flex;
 }
+.slider__wrapper {
+  width: 100%;
+  padding-left: 10px;
+  overflow: hidden;
+}
 
-.slide {
+.slide,
+.slide__descr {
   width: 25%;
   transition: all 0.6s ease;
 }
