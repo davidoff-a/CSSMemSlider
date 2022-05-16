@@ -99,8 +99,7 @@ input[name="r"] {
   overflow: hidden;
 }
 
-.slide,
-.slide__descr {
+.slide {
   width: 25%;
   transition: all 0.6s ease;
 }
@@ -108,20 +107,28 @@ input[name="r"] {
   width: 100%;
   height: 100%;
 }
-
-#r1:checked ~ .slider .slides .s1 {
+.slide__descr {
+  width: 25%;
+  align-self: center;
+  transition: all 0.6s ease;
+}
+#r1:checked ~ .slider .slides .s1,
+#r1:checked ~ .slider__wrapper .slides__text .s1 {
   margin-left: 0;
 }
 
-#r2:checked ~ .slider .slides .s1 {
+#r2:checked ~ .slider .slides .s1,
+#r2:checked ~ .slider__wrapper .slides__text .s1 {
   margin-left: -25%;
 }
 
-#r3:checked ~ .slider .slides .s1 {
+#r3:checked ~ .slider .slides .s1,
+#r3:checked ~ .slider__wrapper .slides__text .s1 {
   margin-left: -50%;
 }
 
-#r4:checked ~ .slider .slides .s1 {
+#r4:checked ~ .slider .slides .s1,
+#r4:checked ~ .slider__wrapper .slides__text .s1 {
   margin-left: -75%;
 }
 
@@ -136,4 +143,8 @@ input[name="r"] {
 }
 #r4:checked ~ .slider__controls label:nth-of-type(4):before {
   background-color: #2f2323;
+}
+
+#r1:checked ~ .slider__wrapper .slides__text .s1 {
+  margin-left: 0;
 }
